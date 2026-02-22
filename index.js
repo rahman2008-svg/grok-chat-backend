@@ -1,4 +1,7 @@
-import express from "express";
+catch (err) {
+  console.error("FULL ERROR:", err);
+  res.status(500).json({ error: err.message || err });
+}import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
